@@ -124,6 +124,7 @@
 	background-image: -webkit-linear-gradient(top, lightblue, lightcyan);
 	background-image: -moz-linear-gradient(top, lightblue, lightcyan);
 	background-image: linear-gradient(to bottom, lightblue, lightcyan);;
+    box-shadow: 40px 10px 5px dark white;
 	padding: 15px;
     border-radius: 80%;
 }
