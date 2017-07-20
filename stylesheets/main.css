@@ -1,0 +1,75 @@
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 1s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 1s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 1s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	10%{color: red;}
+	20%{color: cyan;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+.title, .sub-title {
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 60px;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+}
+
+.generator-button {
+	margin-top: 30px;
+	border: 1px solid red;
+}
+
+.number-container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	background-color: -webkit-gradient(linear, left top, left bottom, from(grey), to(darkslategrey));
+	background-image: -webkit-linear-gradient(top, grey, darkslategrey);
+	background-image: -moz-linear-gradient(top, grey, darkslategrey);
+	background-image: linear-gradient(to bottom, grey, darkslategrey);
+}
+
+.number {
+	background: -webkit-gradient(linear, left top, left bottom, from(lightblue), to(lightcyan));
+	background-image: -webkit-linear-gradient(top, lightblue, lightcyan);
+	background-image: -moz-linear-gradient(top, lightblue, lightcyan);
+	background-image: linear-gradient(to bottom, lightblue, lightcyan);;
+	padding: 15px;
+}
