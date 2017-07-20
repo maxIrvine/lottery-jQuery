@@ -1,5 +1,5 @@
-var $numberDiv = $('number-generator="list"');
-var $numberButton = $('number-generator-button="trigger"');
+var $numberDiv = $('[number-generator="list"]');
+var $numberButton = $('[number-generator-button="trigger"]');
 
 function addNumbers(num) {
     var arr = [];
@@ -42,3 +42,33 @@ function assignNumbers() {
         numbers.push(num2);
     return numbers;
 }
+
+function buildDisplay() {
+    var nums = assignNumbers();
+    nums.forEach(function (num){
+        var $anchor = $('<h2></h2>', {
+            'class': 'number rainbowNew',
+            'text': num
+        });
+        $numberDiv.append($anchor);
+    });
+    
+}
+
+function clearDiv() {
+    $numberDiv.empty();
+}
+
+function listener() {
+    buildDisplay();
+    $numberButton.on("click", function (event){
+        clearDiv();
+        buildDisplay();
+    });
+}
+
+function main() {
+    listener();
+}
+
+main();
