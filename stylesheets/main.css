@@ -15,8 +15,9 @@
 	40%{color: yellow;}
 	60%{color: green;}
 	80%{color: blue;}
-	100%{color: orange;}	
+	100%{color: orange;}
 }
+
 /* Internet Explorer */
 @-ms-keyframes rainbow{
 	20%{color: red;}
@@ -35,6 +36,58 @@
 	80%{color: blue;}
 	100%{color: orange;}	
 }
+
+.rainbowNew {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbowNew 1s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbowNew 1s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbowNew 1s infinite; 
+}
+
+
+@-webkit-keyframes rainbowNew{
+	10%{color: #00ff00;}
+	20%{color: #00e500;}
+	30%{color: #00cc00;}
+	40%{color: #00b200;}
+	50%{color: #009900;}	
+    60%{color: #007f00;}
+	70%{color: #006600;}
+	80%{color: #004c00;}
+	90%{color: #003300;}
+	100%{color:#001900;}	
+}
+
+@-ms-keyframes rainbowNew{
+	10%{color: #00ff00;}
+	20%{color: #00e500;}
+	30%{color: #00cc00;}
+	40%{color: #00b200;}
+	50%{color: #009900;}	
+    60%{color: #007f00;}
+	70%{color: #006600;}
+	80%{color: #004c00;}
+	90%{color: #003300;}
+	100%{color:#001900;}	
+}
+
+@keyframes rainbowNew{
+	10%{color: #00ff00;}
+	20%{color: #00e500;}
+	30%{color: #00cc00;}
+	40%{color: #00b200;}
+	50%{color: #009900;}	
+    60%{color: #007f00;}
+	70%{color: #006600;}
+	80%{color: #004c00;}
+	90%{color: #003300;}
+	100%{color:#001900;}	
+}
+
 
 .title, .sub-title {
 	display: flex;
@@ -72,4 +125,5 @@
 	background-image: -moz-linear-gradient(top, lightblue, lightcyan);
 	background-image: linear-gradient(to bottom, lightblue, lightcyan);;
 	padding: 15px;
+    border-radius: 80%;
 }
